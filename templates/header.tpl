@@ -37,5 +37,21 @@
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<div class="container" id="content">
+		<div class="container">
+			<ul class="col-lg-3 _sidebar" >
+				<!-- BEGIN categories -->
+				<li>
+					<a class="navigation-link" href="/category/{categories.slug}" title="" <!-- IF categories.id -->id="{categories.id}"<!-- ENDIF categories.id --><!-- IF categories.properties.targetBlank --> target="_blank"<!-- ENDIF categories.properties.targetBlank -->>
+						<!-- IF categories.icon -->
+						<i class="fa fa-fw {categories.icon}" data-content=""></i>
+						<!-- ENDIF categories.icon -->
+
+						<!-- IF categories.name -->
+						<span>{categories.name}</span>
+						<!-- ENDIF categories.name -->
+					</a>
+				</li>
+				<!-- END categories -->
+			</ul>
+		    <div id="content" class="col-lg-9">
 		<!-- IMPORT partials/noscript/warning.tpl -->
