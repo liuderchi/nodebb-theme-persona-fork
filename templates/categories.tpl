@@ -5,7 +5,22 @@
 	{{{end}}}
 </div>
 <div class="row">
-	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
+	<ul class="col-lg-3 _sidebar" >
+		<!-- BEGIN categories -->
+		<li class="">
+			<a class="navigation-link" href="/category/{categories.slug}" title="" <!-- IF categories.id -->id="{categories.id}"<!-- ENDIF categories.id --><!-- IF categories.properties.targetBlank --> target="_blank"<!-- ENDIF categories.properties.targetBlank -->>
+				<!-- IF categories.icon -->
+				<i class="fa fa-fw {categories.icon}" data-content=""></i>
+				<!-- ENDIF categories.icon -->
+
+				<!-- IF categories.name -->
+				<span>{categories.name}</span>
+				<!-- ENDIF categories.name -->
+			</a>
+		</li>
+		<!-- END categories -->
+	</ul>
+	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-9<!-- ENDIF widgets.sidebar.length -->">
 		<h1 class="categories-title">[[pages:categories]]</h1>
 		<ul class="categories" itemscope itemtype="http://www.schema.org/ItemList">
 			{{{each categories}}}
