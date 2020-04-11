@@ -30,6 +30,12 @@
 
 			img, .user-icon {
 				.user-icon-style(46px, 2.4rem, 50%);
+				// F1: to override user-icon-style
+				border-radius: 5px;
+				width: 92px;
+				object-fit: contain;
+				margin-right: 5px;
+				// F1: ends
 			}
 
 			h2 {
@@ -39,7 +45,9 @@
 				font-size: 18px;
 				line-height: 22px;
 				margin: 0;
-				margin-left: 62px;
+				// margin-left: 62px;
+				// F1: to override user-icon-style
+				margin-left: 95px;
 
 				strong {
 					color: @gray-dark;
@@ -115,6 +123,10 @@
 	}
 }
 
+// F1: revert h2 to default for specific condition
+.categories > li .content h2 {
+	margin-left: 62px;
+}
 
 .category-header {
 	width: 100%;
