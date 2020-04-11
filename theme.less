@@ -9,8 +9,9 @@
 @_navBg: rgb(0, 106, 166);
 @_navBgActive: rgb(0, 52, 83);
 @_navIconColor: #fff;
+@_editorBg: #666;
 
-@blackText: #333;
+@_blackText: #333;
 
 body {
   color: #fff;
@@ -56,7 +57,7 @@ footer {
   ul.dropdown-menu,
   ul#user-control-list {
     li > a {
-      color: @blackText;
+      color: @_blackText;
       background-color: #fff;
     }
   }
@@ -92,4 +93,14 @@ main#panel .container {
       margin-top: 10px;
     }
   }
+}
+
+.dropdown-menu, .modal-content {
+    color: @_blackText;
+}
+
+.write-preview-container {
+    .write-container > textarea, .preview.well {
+        background-color: @_editorBg;
+    }
 }
