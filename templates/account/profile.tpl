@@ -87,6 +87,19 @@
 			<strong>{age}</strong>
 			<!-- ENDIF age -->
 		</div>
+
+		<!-- B9: Profile Notes -->
+		<div id="profile-notes-row" style="margin: 30px 0 0;">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-6">
+				<textarea id="profile-notes-textarea" class="form-control" rows="5" placeholder="Notes"></textarea>
+			</div>
+			<div class="col-xs-2">
+				<button id="profile-notes-btn" type="button" class="btn btn-primary">save note</button>
+			</div>
+			<div class="col-xs-2"></div>
+		</div>
+
 	</div>
 
 
